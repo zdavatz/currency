@@ -20,6 +20,7 @@ module Currency
     config.load(config.config)
   end
   
+  run_updater
   DRb.start_service(config.drb_uri, self)
   DRb.thread.join
 end
