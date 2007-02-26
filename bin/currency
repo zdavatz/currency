@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+
+require 'drb'
+require 'fastthread'
+require 'rclconf'
+require 'currency'
+
+module Currency
+  default_dir = if(home = ENV['HOME'])
+                  File.join(home, '.currency')
+                else
+                  '/etc'
+                end
+  defaults = {
+    'config'  => File.join(default_dir, 'currency.yml'),
+    'drb_uri' => 'druby://localhost:10999',
+  }
+  config = RCLConf::RCLConf.new(ARGV, defaults)
+  if(File.exist?(config.config))
+    config.load(config.config)
+  end
+  
+  DRb.start_service(config.drb_uri, self)
+  DRb.thread.join
+end
