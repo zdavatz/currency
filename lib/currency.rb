@@ -4,6 +4,8 @@
 require 'thread'
 require 'net/http'
 
+VERSION = '1.0.0'
+
 module Currency
   @rates = {}
   @mutex = Mutex.new
