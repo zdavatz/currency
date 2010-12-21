@@ -4,9 +4,10 @@
 
 == DESCRIPTION:
 
-Simple local DRb-service for Currency-Conversion. The project name at
-http://scm.ywesee.com is currency but the project name at Rubyforge and
-Rubygems is ycurrency as the name "currency" was already taken.
+Simple local DRb-service for Currency-Conversion. 
+
+[[The project name at http://scm.ywesee.com is currency but the project name at Rubyforge and
+Rubygems is ycurrency as the name "currency" was already taken.]]
 
 == INSTALL:
 
