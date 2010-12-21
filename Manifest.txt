@@ -1,10 +1,8 @@
 History.txt
-InstalledFiles
 LICENCE.txt
 Manifest.txt
 README.txt
 Rakefile
 bin/currencyd
-config.save
 install.rb
 lib/currency.rb
