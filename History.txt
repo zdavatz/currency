@@ -1,0 +1,5 @@
+=== 1.0.0 / 21.12.2010
+
+* ycurrency is used in oddb.org and de.oddb.org.
+
+  * Birthday!
