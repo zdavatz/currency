@@ -1,22 +1,21 @@
 #!/usr/bin/env ruby
+# Currency -- de.oddb.org -- 22.11.2011 -- mhatakeyama@ywesee.com
 # Currency -- de.oddb.org -- 26.02.2007 -- hwyss@ywesee.com
 
 require 'thread'
 require 'net/http'
 
-VERSION = '1.0.0'
-
 module Currency
   @rates = {}
   @mutex = Mutex.new
   def Currency.extract_rate(html)
-    if(match = /1\s+[^<>=]+=\s+(\d+\.\d+)/.match(html))
+    if(match = /\<span class=bld\>(\d+\.\d+) \w+\<\/span\>/.match(html))
       match[1]
     end
   end
   def Currency.get_html(origin, target)
     Net::HTTP.start('www.google.com') { |session|
-      session.get("/search?q=1+#{origin.upcase}+in+#{target.upcase}").body
+      session.get("/finance/converter?a=1&from=#{origin.upcase}&to=#{target.upcase}").body
     }
   end
   def Currency.rate(origin, target)
