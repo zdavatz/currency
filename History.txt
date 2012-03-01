@@ -1,3 +1,7 @@
+=== 1.0.1 / 01.03.2012
+
+* Updated currencyd to use http://www.google.com/finance/converter?a=1&from=CHF&to=EUR
+
 === 1.0.0 / 21.12.2010
 
 * ycurrency is used in oddb.org and de.oddb.org.
