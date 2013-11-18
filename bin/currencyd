@@ -2,7 +2,7 @@
 
 require 'drb'
 require 'rclconf'
-require 'currency'
+require File.join(File.expand_path(File.dirname(File.dirname(__FILE__))), 'lib', 'currency')
 
 module Currency
   default_dir = if(home = ENV['HOME'])
