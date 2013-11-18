@@ -21,7 +21,7 @@ Hoe.spec 'ycurrency' do
   # (delete this comment too, of course)
 
 developer('Masaomi Hatakeyama, Zeno R.R. Davatz', 'mhatakeyama@ywesee.com, zdavatz@ywesee.com')
-
+license('GPL-v2')
   # self.rubyforge_name = 'ycurrencyx' # if different than 'ycurrency'
 end
 
