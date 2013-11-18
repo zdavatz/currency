@@ -1,5 +1,7 @@
 source "http://rubygems.org"
 
+gem 'rclconf'
+
 group :development, :test do
   gem 'flexmock'
   gem 'rake'
