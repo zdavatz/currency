@@ -1,24 +1,25 @@
-= ycurrency
+# ycurrency
 
-* http://scm.ywesee.com/?p=currency/.git;a=summary
+* https://github.com/zdavatz/currency
 
-== DESCRIPTION:
+## DESCRIPTION:
 
 Simple local DRb-service for Currency-Conversion. 
 
-[[The project name at http://scm.ywesee.com is currency but the project name at Rubyforge and
+[[The project name at https://github.com/zdavatz/currency is currency but the project name at Rubyforge and
 Rubygems is ycurrency as the name "currency" was already taken.]]
 
-== INSTALL:
+## INSTALL:
 
 * sudo gem install ycurrency
 
-== DEVELOPERS:
+## DEVELOPERS:
 
 * Masaomi Hatakeyama
 * Zeno R.R. Davatz
 * Hannes Wyss (up to Version 1.0)
+* Niklaus Giger
 
-== LICENSE:
+## LICENSE:
 
 * GPLv2
