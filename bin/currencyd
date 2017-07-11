@@ -2,6 +2,7 @@
 
 require 'drb'
 require 'rclconf'
+require 'currency/version'
 require File.join(File.expand_path(File.dirname(File.dirname(__FILE__))), 'lib', 'currency')
 
 module Currency
@@ -18,8 +19,9 @@ module Currency
   if(File.exist?(config.config))
     config.load(config.config)
   end
-  
+
   run_updater
+  puts "Starting #{File.basename(__FILE__)} #{VERSION} on #{config.drb_uri}"
   DRb.start_service(config.drb_uri, self)
   DRb.thread.join
 end
